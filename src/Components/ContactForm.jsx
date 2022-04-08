@@ -98,8 +98,9 @@ const ContactForm = ({setSuccess}) => {
        formData.append('email', email);
        formData.append('phone', phone);
        formData.append('photo', img);
-       
-       fetch('https://frontend-test-assignment-api.abz.agency/api/v1/users',
+
+       if(btnStatus){
+           fetch('https://frontend-test-assignment-api.abz.agency/api/v1/users',
        {method: 'POST', body: formData, headers: 
         {'Token': token,},}).then(resp => {return resp.json() }).then(data => {console.log(data)
             if(data.success) {
@@ -107,6 +108,9 @@ const ContactForm = ({setSuccess}) => {
                 setSuccess(true);
             }else{
                  console.log('error') } }).catch(function(error) {console.log(error);})
+       }
+       
+       
      
 
     }
