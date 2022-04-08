@@ -1,0 +1,489 @@
+@import url(https://fonts.googleapis.com/css?family=Nunito:200,300,regular,500,600,700,800,900,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+
+$PrimaryColor:#F4E041;
+$SecondaryColor:#00BDD3;
+$BackgroundColor:#F8F8F8;
+
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito';
+    font-weight: 400;
+}
+
+p{
+    font-size: 16px;
+    line-height: 26px;
+}
+
+body{
+    background-color: $BackgroundColor;
+}
+
+.App{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.main__header{
+    width: 100%;
+    height: 60px;
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+
+        .header__container{
+        max-width: 1170px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .btn__box{
+            width: 210px;
+            height: 34px;
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+}
+
+
+.main__container{
+    max-width: 1170px;
+}
+
+
+
+.HelloBox{
+    max-width: 1170px;
+    height: 650px;
+    background: url('./assets/img/pexels-alexandr-podvalny-1227513.jpeg') 50.5% 80% no-repeat;
+    background-size: 215%;
+}
+
+.dark__layer{
+    z-index: 2;
+    background-color:rgba(0, 0, 0, 0.5);
+    
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .main__inf{
+        color: #FFFFFF;
+        width: 380px;
+        height: 323px;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+        h2{
+            font-size: 40px;
+            line-height: 40px;
+        }
+
+        p{
+            margin-top: 21px;
+            margin-bottom: 36px;
+        }
+    }
+}
+
+.title{
+        width: 100%;
+        text-align: center;
+        margin-top: 140px;
+        margin-bottom: 50px;
+        h2{
+            font-size: 40px;
+            line-height: 40px;
+        }
+    }
+
+.users__container{
+    width: 100%;
+    max-height: 1724px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    .showMore__btn{
+        cursor: pointer;
+        background-color: $PrimaryColor;
+        border-radius: 80px;
+        width: 120px;
+        height: 34px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 50px;
+    }
+}
+
+
+
+.user__item{
+    max-width: 370px;
+    max-height: 254px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #FFFFFF;
+    text-align: center;
+    border-radius: 10px;
+    margin-top:29px ;
+
+    img{
+        border-radius: 50%;
+    }
+    p{
+       font-size: 16px;
+       line-height: 26px;
+    }
+    .user__name{
+        margin: 20px 0 20px 0;
+    }
+}
+
+.contact__cotainer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 651px;
+
+    input{
+        min-height: 54px;
+        max-width: 380px;
+        padding-left: 16px;
+        border: 1px solid #D0CFCF;
+        background-color: $BackgroundColor;
+        border-radius: 4px;
+        margin-bottom: 50px;
+        color:#7E7E7E;
+        font-size: 16px;
+        line-height:26px;
+    }
+    input[type=tel]{
+        margin-bottom: 0;
+    }
+
+    .phone__exapmle{
+        margin-top: 4px;
+        max-width: 380px;
+        text-align: left;
+        color: #7E7E7E;
+        font-size: 12px;
+        line-height: 12px;
+        padding-left: 16px;
+    }
+
+    .available__positions{
+        text-align: left;
+        margin-top: 25px;
+        max-width: 380px;
+        min-height: 135px;
+        font-size: 16px;
+        line-height: 26px;
+
+
+        .position__item{
+          height: 26px;
+          display: flex;
+          align-items: center;
+          margin-bottom: 7px;
+        }
+
+       p{
+           margin-bottom:11px ;
+       }
+        
+        .label{
+            display: inline-flex
+        }
+
+        .label  p{
+          margin-bottom: 0;
+          margin-left: 12px;
+        }
+        
+
+        .ch__box{
+            width: 20px;
+            height: 20px;
+            border: 1px solid #D0CFCF;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .dot{
+                width: 0px;
+                height: 0px;
+                background-color: #00BDD3;
+                border-radius: 50%;
+                transition: 0.3s;
+            }
+        }
+
+        
+
+        input[type=radio] {
+            margin: 0;
+            display: none;
+        }
+
+        input[type=radio]:checked +.ch__box{
+            border: 1px solid #00BDD3;
+
+            .dot{
+                width: 10px;
+                height: 10px;
+            }
+            
+        }        
+        
+    }
+    
+
+    .file__adder{
+        margin-top: 50px;
+        margin-bottom: 50px;
+        max-width: 380px;
+        height: 54px;
+        border-radius: 4px;
+        border: 1px solid #D0CFCF;
+        display: flex;
+        align-items: center;
+
+        font-size: 16px;
+        line-height: 26px;
+        color: #7E7E7E;
+
+        p{
+            margin-left: 16px;
+        }
+
+
+        .upload__btn{
+            cursor: pointer;
+            height: 100%;
+            width: 83px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid black;
+            color: black;
+            margin: 0;
+        }
+
+        input{
+            display: none;
+        }
+    }
+
+    margin-bottom: 50px;
+
+
+   
+}
+
+.success{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+
+
+
+
+
+@media(min-width:1200px){
+
+    .HelloBox{
+        width: 1170px;
+    }
+
+    .main__container{
+        width: 1170px;
+    }
+
+    .header__container{
+        width: 1170px;
+    }
+
+    .user__item{
+        width: 370px;
+        height: 254px;
+    }
+    .users__container{
+        height: 615px;
+    }
+
+    .contact__cotainer{
+        input{
+            width: 380px;
+        }
+        .phone__exapmle{
+            width: 380px;
+        }
+        .available__positions{
+            width: 380px;
+        }
+        
+        .file__adder{
+            width: 380px;
+            height: 54px;
+        }
+
+    }
+    
+}
+
+
+@media(max-width:1200px){
+
+    .HelloBox{
+        width: 100%;
+    }
+    .main__container{
+        width: 904px;
+    }
+
+    .header__container{
+        width: 800px;
+    }
+
+    .user__item{
+        width: 282px;
+        height: 254px;
+    }
+
+    .users__container{
+        height: 615px;
+    }
+
+    .contact__cotainer{
+        input{
+            width: 380px;
+        }
+        .phone__exapmle{
+            width: 380px;
+        }
+        .available__positions{
+            width: 380px;
+        }
+        
+        .file__adder{
+            width: 380px;
+            height: 54px;
+        }
+
+    }
+
+}
+
+
+
+@media(max-width:1024px){
+
+    .HelloBox{
+        width: 100%;
+    }
+    .main__container{
+        width: 704px;
+    }
+
+    .header__container{
+        width: 800px;
+    }
+
+    .user__item{
+        width: 344px;
+        height: 254px;
+        margin-top:16px
+    }
+
+    .users__container{
+        height: 874px;
+    }
+
+    .contact__cotainer{
+        input{
+            width: 380px;
+        }
+        .phone__exapmle{
+            width: 380px;
+        }
+        .available__positions{
+            width: 380px;
+        }
+        
+        .file__adder{
+            width: 380px;
+            height: 54px;
+        }
+
+    }
+
+}
+
+
+
+@media(max-width:768px){
+
+    .HelloBox{
+        width: 100%;
+        background: url('./assets/img/pexels-alexandr-podvalny-1227513.jpeg') 50.5% 80% no-repeat;
+        background-size: 300%;
+    }
+    .main__container{
+        width: 328px;
+    }
+
+    .header__container{
+        justify-content: space-between;
+    }
+
+    .user__item{
+        width: 328px;
+        height: 254px;
+        margin-top: 20px;
+    }
+
+    .users__container{
+        height: 1708px;
+    }
+
+    .contact__cotainer{
+        input{
+            width: 328px;
+        }
+        .phone__exapmle{
+            width: 328px;
+        }
+        .available__positions{
+            width: 328px;
+        }
+        
+        .file__adder{
+            width: 328px;
+            height: 54px;
+        }
+
+    }
+
+}

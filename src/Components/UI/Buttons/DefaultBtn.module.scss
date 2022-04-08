@@ -1,0 +1,23 @@
+
+$BtnNormal:#F4E041;
+$BtnHover:#FFE302;
+$BtnDisabled:#B4B4B4;
+    
+
+    .DefaultBtn{
+        width: 100px;
+        height: 34px;
+        background-color: $BtnNormal;
+        border-radius: 80px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: black;
+        cursor: pointer;
+        
+        
+    }
+
+    .DefaultBtn:hover{
+        background-color:$BtnHover;
+    }
