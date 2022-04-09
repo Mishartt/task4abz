@@ -25,7 +25,7 @@ const ContactForm = ({setSuccess}) => {
 
 
     useEffect(() => {
-        if(nameStatus&&emailStatus&&phoneStatus&&positionStatus&&imgStatus&&img!==''){
+        if(nameStatus&&emailStatus&&phoneStatus&&positionStatus&&imgStatus&&img!==''&&name!==''&&email!==''&&phone!==''&&position!==''){
             setBtnStatus(false)
         }else{
             setBtnStatus(true)
@@ -99,7 +99,7 @@ const ContactForm = ({setSuccess}) => {
        formData.append('phone', phone);
        formData.append('photo', img);
 
-       if(btnStatus){
+       if(!btnStatus){
            fetch('https://frontend-test-assignment-api.abz.agency/api/v1/users',
        {method: 'POST', body: formData, headers: 
         {'Token': token,},}).then(resp => {return resp.json() }).then(data => {console.log(data)
