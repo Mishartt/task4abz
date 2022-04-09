@@ -25,7 +25,7 @@ const ContactForm = ({setSuccess}) => {
 
 
     useEffect(() => {
-        if(nameStatus&&emailStatus&&phoneStatus&&positionStatus&&imgStatus&&img!==''&&name!==''&&email!==''&&phone!==''&&position!==''){
+        if(img!==''&&name!==''&&email!==''&&phone!==''&&position!==''){
             setBtnStatus(false)
         }else{
             setBtnStatus(true)
