@@ -1,8 +1,8 @@
 import React from "react";
 
 const UserItem = ({user}) => {
-
-
+    
+   
 
     return(
         <div className="user__item">
@@ -16,4 +16,4 @@ const UserItem = ({user}) => {
 }
 
 
-export default UserItem
+export default React.memo(UserItem)
