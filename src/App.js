@@ -27,7 +27,7 @@ function App() {
           <HelloBox/>
         <div className='main__container'>
           <Title text={'Working with GET request'}/>
-          <UserList/>
+          <UserList success={success}/>
           <Title text={'Working with POST request'}/>
           <ContactForm setSuccess={setSuccess}/>
           <Success displ={success}/>
