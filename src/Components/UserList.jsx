@@ -25,6 +25,8 @@ const UserList = ({success}) => {
       if(users !== undefined&&users.length <6){
          setMorePages(false)
          console.log('asd');
+      }else{
+        setMorePages(true)
       }
      
     },[users])
