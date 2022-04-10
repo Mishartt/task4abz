@@ -51,8 +51,8 @@ const UserList = ({success}) => {
                       <UserItem key={user.id} user={user}/>
                  )
                  :
-                 <div>
-                        <h1>Loading</h1>
+                 <div className="loading__page">
+                        <div class="preloader"><div></div><div></div><div></div><div></div></div>
                  </div>
               }
 

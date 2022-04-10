@@ -12,8 +12,7 @@ import UserList from './Components/UserList';
 /**
  * TODO:
  * loading
- * correct photo 4 phone version
- * preloader 
+ * posis users
  */
 
 

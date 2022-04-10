@@ -141,9 +141,10 @@ const ContactForm = ({setSuccess}) => {
                         <AvPosition enter={setPosition} key={ps.id} ps={ps}/>
                         )
                         :
-                        <div>
-                            Loadaing...
-                        </div>
+                        
+                    <div className="loading__page">
+                        <div class="preloader"><div></div><div></div><div></div><div></div></div>
+                    </div>
                     }
                 </div>
 
