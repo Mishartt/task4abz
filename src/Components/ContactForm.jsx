@@ -143,7 +143,7 @@ const ContactForm = ({setSuccess}) => {
                         :
                         
                     <div className="loading__page">
-                        <div class="preloader"><div></div><div></div><div></div><div></div></div>
+                        <div className="preloader"><div></div><div></div><div></div><div></div></div>
                     </div>
                     }
                 </div>
