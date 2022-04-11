@@ -153,6 +153,22 @@ body{
     .user__name{
         margin: 20px 0 20px 0;
     }
+
+
+    .full__email{
+        position: absolute;
+        display: none;
+        background-color: black;
+        border-radius: 4px;
+        padding: 3px 16px 3px 16px;
+        margin-left: 50px;
+        p{
+            color: white;
+        }
+    }
+    .user__email:hover +.full__email{
+        display: block;
+    }
 }
 
 .contact__cotainer{
@@ -413,6 +429,9 @@ body{
     .user__item{
         width: 282px;
         height: 254px;
+
+        
+       
     }
 
     .users__container{
